@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main(){
+    float a, b;
+    
+    printf("Enter first number: ");
+    scanf("%f", &a);
+    printf("Enter second number: ");
+    scanf("%f", &b);
+    
+    if(a == b)
+    {
+        printf("Both the numbers are equal");
+    }
+    
+    else
+    {
+         printf("The numbers are unequal");
+    }
+    return 0;
+}
