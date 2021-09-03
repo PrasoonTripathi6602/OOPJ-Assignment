@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <conio.h>
+#include<math.h>
+ 
+int main(){
+    float length, breadth, area, perimeter, diagonal;
+    
+    printf("Enter length of Rectangle: ");
+    scanf("%f", &length);
+    printf("Enter width of Rectangle: ");
+    scanf("%f", &breadth);
+    
+    if(length == breadth)
+    {
+        printf("IT IS A SQUARE");
+    }
+    
+    else{
+        
+    area = length * breadth;
+    printf(" \n Area of Rectangle : %0.4f\n", area);
+    perimeter = 2*(length + breadth);
+    printf("Perimeter of Rectangle : %0.4f\n", perimeter);
+    diagonal= sqrt(length*length + breadth*breadth);
+    printf("Diagonal of Rectangle : %0.4f\n", diagonal);
+        
+    getch();
+    }
+    return 0;
+}
