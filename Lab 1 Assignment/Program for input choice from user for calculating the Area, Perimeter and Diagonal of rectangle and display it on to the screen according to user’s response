@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include<math.h>
+ 
+int main()
+{
+    float length, breadth, area, perimeter, diagonal;
+    int ch;
+    printf("Enter length of Rectangle: ");
+    scanf("%f", &length);
+    printf("Enter width of Rectangle: ");
+    scanf("%f", &breadth);
+    if(length == breadth)
+    {
+        printf("It's a square");
+    }
+    else{
+    printf("Enter 1 for area,  2 for perimeter,  and 3 for diagoanl of the rectangle: ");
+    scanf("%d", &ch);
+    
+    if(ch == 1)
+    {
+        area = length * breadth;
+        printf(" \n Area of Rectangle : %0.4f\n", area);
+    }
+    else if(ch == 2){
+        perimeter = 2*(length + breadth);
+        printf("Perimeter of Rectangle : %0.4f\n", perimeter);
+    }
+    else if(ch == 3)
+    {
+        diagonal= sqrt(length*length + breadth*breadth);
+        printf("Diagonal of Rectangle : %0.4f\n", diagonal);
+    }
+    else
+    {
+        printf("WRONG INPUT");
+    }
+    }
+    return 0;
+}
