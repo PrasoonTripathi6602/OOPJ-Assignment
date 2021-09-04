@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main() {
+  double a, b, temp;
+  int ch;
+  printf("Enter first number: ");
+  scanf("%lf", &a);
+  printf("Enter second number: ");
+  scanf("%lf", &b);
+  printf("Enter 1 for using temporary variable or enter 2 for using without variable: ");
+  scanf("%d", &ch);
+  if(ch == 1){
+      temp = a;
+  a = b;
+  b = temp;
+  
+  printf("\nAfter swapping, first number = %.2lf\n", a);
+  printf("After swapping, second number = %.2lf", b);
+  }
+  else if(ch == 2)
+  {
+  a = a - b;   
+  b = a + b;
+  a = b - a;
+
+  printf("After swapping, a = %.2lf\n", a);
+  printf("After swapping, b = %.2lf", b);
+  }
+  else{
+      printf("WRONG INPUT");
+  }
+  return 0;
+}
