@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include<math.h>
  
 int main(){
@@ -23,8 +22,6 @@ int main(){
     printf("Perimeter of Rectangle : %0.4f\n", perimeter);
     diagonal= sqrt(length*length + breadth*breadth);
     printf("Diagonal of Rectangle : %0.4f\n", diagonal);
-        
-    getch();
     }
     return 0;
 }
